@@ -20,8 +20,8 @@ function ExpenseForm(props) {
     setEnteredDate(event.target.value);
   }
 
-  function submitHandler() {
-    preventDefault();
+  function submitHandler(event) {
+    event.preventDefault();
 
     const expenseData = {
       title: enteredTitle,
